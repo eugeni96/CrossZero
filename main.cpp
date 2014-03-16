@@ -83,7 +83,7 @@ bool victoryCheck(char **field, int n, int row, int col)
     }
     for (int i=0; i<n; i++)
     {
-        if(field[n-1-i][n-1-i]!=field[row][col])
+        if(field[n-1-i][i]!=field[row][col])
             tester4=0;
     }
     return (tester1||tester2||tester3||tester4);
